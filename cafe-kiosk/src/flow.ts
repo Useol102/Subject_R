@@ -26,7 +26,7 @@ export const SCREEN_LABEL: Record<Screen, string> = {
 
 /** 진행 단계 아래 한 줄 안내 */
 export const FLOW_HELP: Record<Exclude<Screen, 'start'>, string> = {
-  menu: '메뉴를 누른 뒤 온도·크기·수량을 선택해 주세요.',
+  menu: '메뉴를 누른 뒤 온도, 크기, 수량을 골라 주세요.',
   confirm: '메뉴와 수량, 총 금액을 확인해 주세요.',
   pay: '결제 방식을 눌러 연습을 마쳐 주세요. 실제로 결제되지 않습니다.',
   done: '주문 연습을 마쳤습니다. 실제 주문은 접수되지 않았습니다.',

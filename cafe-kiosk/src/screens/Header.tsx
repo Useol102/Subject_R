@@ -1,13 +1,15 @@
 interface Props {
   /** 가운데 제목 (현재 단계) */
   title: string
+  /** 제목 옆 작은 표시 (예: 매장에서 먹어요) */
+  chip?: string
   /** 남은 시간(초). 없으면 표시하지 않는다 */
   timeLeft?: number
   onHome?: () => void
 }
 
 /** 화면 맨 위 줄. 실제 키오스크처럼 처음으로 · 현재 단계 · 남은 시간을 보여준다 */
-export default function Header({ title, timeLeft, onHome }: Props) {
+export default function Header({ title, chip, timeLeft, onHome }: Props) {
   return (
     <header className="hdr">
       <div className="hdr-side">
@@ -18,7 +20,10 @@ export default function Header({ title, timeLeft, onHome }: Props) {
           </button>
         )}
       </div>
-      <h1 className="hdr-title">{title}</h1>
+      <div className="hdr-center">
+        <h1 className="hdr-title">{title}</h1>
+        {chip && <span className="hdr-chip">{chip}</span>}
+      </div>
       <div className="hdr-side hdr-right">
         {timeLeft !== undefined && (
           <span className={`hdr-timer${timeLeft <= 20 ? ' warn' : ''}`} aria-live={timeLeft <= 10 ? 'polite' : 'off'}>

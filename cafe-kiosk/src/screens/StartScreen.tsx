@@ -9,7 +9,6 @@ export default function StartScreen({ onStart }: Props) {
   return (
     <main className="start">
       <div className="start-top">
-        <p className="start-kicker">카페 주문</p>
         <h1 className="start-title">주문하실 곳을<br />선택해 주세요</h1>
       </div>
       <div className="start-choices">
@@ -30,7 +29,6 @@ export default function StartScreen({ onStart }: Props) {
           <span className="choice-title">포장해서 가져가기</span>
         </button>
       </div>
-      <p className="start-foot">교육용 연습 화면입니다. 실제로 결제되지 않습니다.</p>
     </main>
   )
 }

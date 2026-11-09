@@ -44,7 +44,8 @@ export default function ConfirmScreen({ dineType, lines, timeLeft, onChangeDine,
                 <tr key={l.key}>
                   <td>
                     <span className="t-name">{l.item.name}</span>
-                    <span className="t-sub">{optionLabel(l) ? `${optionLabel(l)} · ` : ''}1개 {formatWon(unitPrice(l.item, l))}</span>
+                    {optionLabel(l) && <span className="t-sub">{optionLabel(l)}</span>}
+                    <span className="t-sub">한 개 {formatWon(unitPrice(l.item, l))}</span>
                   </td>
                   <td className="c">
                     <span className="qty qty-lg">

@@ -5,7 +5,7 @@ export function AppHeading() {
   return (
     <div className="app-heading">
       <span className="app-name">카페 주문 연습</span>
-      <span className="education">교육용 화면 · 실제 결제 없음</span>
+      <span className="education">실제로 결제되지 않는 연습 화면이에요</span>
     </div>
   )
 }

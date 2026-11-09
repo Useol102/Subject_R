@@ -75,9 +75,9 @@ export function formatWon(n: number): string {
 /** 옵션 표시 문구. 없으면 빈 문자열 */
 export function optionLabel(opts: LineOptions): string {
   const parts: string[] = []
-  if (opts.temperature) parts.push(opts.temperature)
-  if (opts.size) parts.push(opts.size === 'L' ? '크게' : '기본')
-  return parts.join(' · ')
+  if (opts.temperature) parts.push(opts.temperature === 'ICE' ? '차갑게' : '뜨겁게')
+  if (opts.size) parts.push(opts.size === 'L' ? '크게' : '기본 크기')
+  return parts.join(', ')
 }
 
 /** 메뉴에 맞는 기본 옵션. 선택 가능한 것만 채운다 */

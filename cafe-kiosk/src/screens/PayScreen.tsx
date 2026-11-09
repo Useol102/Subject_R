@@ -53,17 +53,17 @@ export default function PayScreen({ lines, timeLeft, paying, onPayingChange, onB
           <button type="button" className="method" onClick={() => choose('card')}>
             <svg className="method-icon" viewBox="0 0 64 64" aria-hidden="true"><rect x="6" y="14" width="52" height="36" rx="5" fill="none" stroke="currentColor" strokeWidth="4" /><rect x="6" y="22" width="52" height="7" fill="currentColor" /><rect x="14" y="38" width="14" height="5" rx="1" fill="currentColor" /></svg>
             <span className="method-name">카드 결제</span>
-            <span className="method-desc">신용카드 · 체크카드</span>
+            <span className="method-desc">신용카드, 체크카드</span>
           </button>
           <button type="button" className="method" onClick={() => choose('qr')}>
             <svg className="method-icon" viewBox="0 0 64 64" aria-hidden="true"><rect x="16" y="4" width="32" height="56" rx="6" fill="none" stroke="currentColor" strokeWidth="4" /><rect x="23" y="16" width="8" height="8" fill="currentColor" /><rect x="33" y="16" width="8" height="8" fill="currentColor" /><rect x="23" y="26" width="8" height="8" fill="currentColor" /><rect x="35" y="28" width="4" height="4" fill="currentColor" /><rect x="28" y="50" width="8" height="3" rx="1.5" fill="currentColor" /></svg>
             <span className="method-name">간편결제</span>
-            <span className="method-desc">휴대폰 바코드 · QR</span>
+            <span className="method-desc">휴대폰 바코드나 QR</span>
           </button>
           <button type="button" className="method" onClick={() => choose('cash')}>
             <svg className="method-icon" viewBox="0 0 64 64" aria-hidden="true"><rect x="4" y="16" width="56" height="32" rx="4" fill="none" stroke="currentColor" strokeWidth="4" /><circle cx="32" cy="32" r="7" fill="none" stroke="currentColor" strokeWidth="4" /><circle cx="14" cy="32" r="2.5" fill="currentColor" /><circle cx="50" cy="32" r="2.5" fill="currentColor" /></svg>
             <span className="method-name">카운터 결제</span>
-            <span className="method-desc">현금 · 직원에게 결제</span>
+            <span className="method-desc">현금으로 직원에게 결제</span>
           </button>
         </div>
       </main>
@@ -110,7 +110,7 @@ function PayGuideArt({ method }: { method: PayMethod }) {
           <rect x="40" y="70" width="120" height="40" rx="6" fill="#374151" />
           <rect x="62" y="80" width="76" height="6" rx="3" fill="#111827" />
           <g className="guide-move">
-            <rect x="70" y="10" width="60" height="76" rx="6" fill="#0066CC" />
+            <rect x="70" y="10" width="60" height="76" rx="6" fill="#2350D8" />
             <rect x="80" y="20" width="14" height="10" rx="2" fill="#F2C94C" />
           </g>
         </g>
@@ -133,7 +133,7 @@ function PayGuideArt({ method }: { method: PayMethod }) {
         <g>
           <rect x="30" y="64" width="140" height="46" rx="6" fill="#374151" />
           <rect x="30" y="56" width="140" height="12" rx="4" fill="#4B5563" />
-          <circle cx="100" cy="30" r="18" fill="#0066CC" />
+          <circle cx="100" cy="30" r="18" fill="#2350D8" />
           <text x="100" y="37" textAnchor="middle" fontSize="20" fontWeight="700" fill="#FFFFFF">번호</text>
         </g>
       )}
