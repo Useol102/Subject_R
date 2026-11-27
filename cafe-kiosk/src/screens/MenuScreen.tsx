@@ -41,7 +41,7 @@ export default function MenuScreen({ dineType, lines, timeLeft, onAdd, onChangeQ
 
   return (
     <div className="screen menu-screen" data-cat={category}>
-      <Header title="메뉴 선택" chip={dineType === 'store' ? '매장에서 먹어요' : '포장해 가요'} timeLeft={timeLeft} onHome={onHome} />
+      <Header title={`${dineType === 'store' ? '매장' : '포장'} · 메뉴 선택`} timeLeft={timeLeft} onHome={onHome} />
 
       <nav className="tabs" aria-label="메뉴 분류">
         {CATEGORIES.map((c) => (
@@ -53,7 +53,6 @@ export default function MenuScreen({ dineType, lines, timeLeft, onAdd, onChangeQ
             aria-pressed={c.id === category}
             onClick={() => setCategory(c.id)}
           >
-            <span className="tab-dot" aria-hidden="true" />
             {c.name}
           </button>
         ))}
