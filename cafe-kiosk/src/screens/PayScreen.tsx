@@ -110,7 +110,7 @@ function PayGuideArt({ method }: { method: PayMethod }) {
           <rect x="40" y="70" width="120" height="40" rx="6" fill="#374151" />
           <rect x="62" y="80" width="76" height="6" rx="3" fill="#111827" />
           <g className="guide-move">
-            <rect x="70" y="10" width="60" height="76" rx="6" fill="#2350D8" />
+            <rect x="70" y="10" width="60" height="76" rx="6" fill="#0066CC" />
             <rect x="80" y="20" width="14" height="10" rx="2" fill="#F2C94C" />
           </g>
         </g>
@@ -133,7 +133,7 @@ function PayGuideArt({ method }: { method: PayMethod }) {
         <g>
           <rect x="30" y="64" width="140" height="46" rx="6" fill="#374151" />
           <rect x="30" y="56" width="140" height="12" rx="4" fill="#4B5563" />
-          <circle cx="100" cy="30" r="18" fill="#2350D8" />
+          <circle cx="100" cy="30" r="18" fill="#0066CC" />
           <text x="100" y="37" textAnchor="middle" fontSize="20" fontWeight="700" fill="#FFFFFF">번호</text>
         </g>
       )}

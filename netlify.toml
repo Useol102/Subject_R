@@ -1,0 +1,8 @@
+# Netlify 배포 설정. 저장소를 Netlify 에 연결하면 이 파일대로 빌드한다.
+[build]
+  base = "cafe-kiosk"
+  command = "npm ci && npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
